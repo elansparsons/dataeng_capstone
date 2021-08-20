@@ -23,29 +23,29 @@ Below, each table and its columns (types) are listed out. Primary keys are marke
 Explanations for each variable may be found in data_dictionary.tsv in this directory.
 
 **arrivals**
-    - arrival_id (serial) PK
-    - country_id (int) FK
-    - visa_type (int)
-    - count (int)
-    - year (int)
-    - month (int)
-    - port (varchar) FK
+  - arrival_id (serial) PK
+  - country_id (int) FK
+  - visa_type (int)
+  - count (int)
+  - year (int)
+  - month (int)
+  - port (varchar) FK
     
 **temp**
-    - temp_id (serial) PK 
-    - country_id (int) FK
-    - year (int)
-    - month (int)
-    - avg_temp (float)
-    - avg_tempF (float)
+  - temp_id (serial) PK 
+  - country_id (int) FK
+  - year (int)
+  - month (int)
+  - avg_temp (float)
+  - avg_tempF (float)
     
 **airports**
-    - port (varchar) PK
-    - municipality (varchar)
-    - country_id (int) FK
-    - region (varchar)
+  - port (varchar) PK
+  - municipality (varchar)
+  - country_id (int) FK
+  - region (varchar)
 
 **countries**
-    - country_id (int) PK 
-    - country_name (varchar)
+  - country_id (int) PK 
+  - country_name (varchar)
 
