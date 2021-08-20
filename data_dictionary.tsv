@@ -1,0 +1,24 @@
+table	variable name	description	source	source url
+arrivals				
+	arrival_id	identifier for each line in the arrivals table	I94 immigration data	https://www.trade.gov/national-travel-and-tourism-office
+	country_id	identifier for each country in the country table	I94 immigration data, ISO country codes	https://www.trade.gov/national-travel-and-tourism-office, https://datahub.io/core/country-list#data
+	visa_type	general category of visa, where 1 is for business, 2 is for pleasure, and 3 is for students.	I94 immigration data	https://www.trade.gov/national-travel-and-tourism-office
+	count	count of individual arrivals		
+	year	year this count is aggregated from	I94 immigration data	https://www.trade.gov/national-travel-and-tourism-office
+	month	month this count is aggregated from	I94 immigration data	https://www.trade.gov/national-travel-and-tourism-office
+	port	port code	Airport codes	https://datahub.io/core/airport-codes#data
+temp				
+	temp_id	identifier for each line in the temp (temperature) table		
+	country_id	identifier for each country in the country table	I94 immigration data, ISO country codes	https://www.trade.gov/national-travel-and-tourism-office, https://datahub.io/core/country-list#data
+	year	year this measurement is aggregated from	World temperature data	https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data
+	month	month this measurement is aggregated from	World temperature data	https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data
+	avg_temp	average temperature in Celsius per country in a given month, across all measured cities	World temperature data	https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data
+	avg_tempF	average temperature in Fahrenheit per country in a given month, across all measured cities	World temperature data	https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data
+airports				
+	port	port code	Airport codes	https://datahub.io/core/airport-codes#data
+	municipality	municipality of the port	Airport codes	https://datahub.io/core/airport-codes#data
+	country_id	identifier for each country in the country table	I94 immigration data, ISO country codes	https://www.trade.gov/national-travel-and-tourism-office, https://datahub.io/core/country-list#data
+	region	region the port is contained in, in the format of a 2-letter country code followed by a 2-letter state/region code	Airport codes	https://datahub.io/core/airport-codes#data
+countries				
+	country_id	identifier for each country in the country table	I94 immigration data, ISO country codes	https://www.trade.gov/national-travel-and-tourism-office, https://datahub.io/core/country-list#data
+	country_name	name of the country.	I94 immigration data, ISO country codes	https://www.trade.gov/national-travel-and-tourism-office, https://datahub.io/core/country-list#data
