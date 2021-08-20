@@ -2,8 +2,9 @@
 This is the final project for the Udacity Data Engineering Nanodegree.
 
 ## Repository
-**Capstone Project.ipynb** - Workbook that led to creation of the more concise etl.py. Contains a more thorough writeup of all processes, as well as data checks after table insertion.
-**create_tables.py** - Deletes all tables and the database itself if it already exists, then creates the database/tables according to sql_queries.py.
+**Capstone Project.ipynb** - Workbook that led to creation of the more concise etl.py. Contains a more thorough writeup of all processes.
+**exploration.ipynb** - Initial reads/exploration of the data.
+**create_tables.py** - Deletes all tables and the database itself if it already exists, then creates the database/tables according to sql_queries.py. Runs count-based quality checks.
 **etl.py** - Loads files in the directory, processes them, and sends their values into the database insert statements.
 **sql_queries.py** - Specifies the creation and insertion commands for each table in the database.
 
@@ -12,8 +13,7 @@ There are 2 forms of this project offered: As a notebook and as shell scripts.
 
 For the notebook, run each cell in Capstone Project.ipynb in order. 
 
-In the terminal, you may use `python3 create_tables.py` while in the directory, which will set up the skeleton for the database. The final required step is to run `python3 etl.py` to insert all data in the directory to their correct tables. Running time is approximately 15 minutes. After this completes, you may elect to run section 4.2 of the notebook for some basic quality checks.
-NOTE: Udacity's virtual machine appears to have a problem running this in the terminal, even though the same code written in the same way in `shell_tests.ipynb` runs correctly.
+In the terminal, you may use `python3 create_tables.py` while in the directory, which will set up the skeleton for the database. The final required step is to run `python3 etl.py` to insert all data in the directory to their correct tables. An additional quality check looking at the expected and observed counts in the final tables is run at the end of this file, and will raise an error if expectations are violated. Running time is approximately 6 minutes.
 
 
 ### Schema
