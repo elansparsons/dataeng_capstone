@@ -3,9 +3,13 @@ This is the final project for the Udacity Data Engineering Nanodegree.
 
 ## Repository
 **Capstone Project.ipynb** - Workbook that led to creation of the more concise etl.py. Contains a more thorough writeup of all processes.
+
 **exploration.ipynb** - Initial reads/exploration of the data.
+
 **create_tables.py** - Deletes all tables and the database itself if it already exists, then creates the database/tables according to sql_queries.py. Runs count-based quality checks.
+
 **etl.py** - Loads files in the directory, processes them, and sends their values into the database insert statements.
+
 **sql_queries.py** - Specifies the creation and insertion commands for each table in the database.
 
 ## How to use
